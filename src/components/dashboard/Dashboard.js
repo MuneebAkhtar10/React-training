@@ -33,7 +33,7 @@ export default class Dashboard extends React.Component {
 
   handleDelete = (postId) => {
     console.log(postId)
-    axios.delete(`http://localhost:3000/api/v1/projects/${postId}`).
+    axios.delete(`/api/v1/projects/${postId}`).
       then((response) => {
         alert('Post deleted successfully')
         this.fetchPostsList();

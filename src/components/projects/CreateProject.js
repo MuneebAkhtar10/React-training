@@ -74,7 +74,7 @@ export default class CreateProject extends React.Component {
 
     createPostRequest = (event) => {
       console.log('this.state', this.state);
-     axios.post('http://localhost:3000/api/v1/projects.json',
+     axios.post('/api/v1/projects.json',
      {  
         method: 'post',
         title: (this.state.title),
@@ -91,67 +91,65 @@ export default class CreateProject extends React.Component {
   render() {
     const {title, des} = this.state;
     return (
-      <div>
-      {/* {this.change} */}
+  //     <div>
+  //     {/* {this.change} */}
 
-     <h4>Create Project</h4>
-     <div>
-       <label>Title: </label>
-       <input
-         type='text'
-         name='title'
-         value={title}
-         onChange={this.handleInputChange}
-         />
-     </div>
-     <div>
-       <label>Description: </label>
-       <input
-         type='text'
-         name='des'
-         value={des}
-         onChange={this.handleInputChange}
-         />
-     </div>
+  //    <h4>Create Project</h4>
+  //    <div>
+  //      <label>Title: </label>
+  //      <input
+  //        type='text'
+  //        name='title'
+  //        value={title}
+  //        onChange={this.handleInputChange}
+  //        />
+  //    </div>
+  //    <div>
+  //      <label>Description: </label>
+  //      <input
+  //        type='text'
+  //        name='des'
+  //        value={des}
+  //        onChange={this.handleInputChange}
+  //        />
+  //    </div>
 
-     <button onClick={this.createPostRequest}>Create</button>
-   </div>
-
-
+  //    <button onClick={this.createPostRequest}>Create</button>
+  //  </div>
 
 
 
 
-  //     <div className="container">
-  //     <form className="white">
-  //         <h5 className="grey-text text-darken-3">Create Project</h5>
-  //         <div className="input-field">
-  //         <label>Title: </label>
-  //         <input
-  //           ref="title"
-  //           type='text'
-  //           name='title'
-  //           value={title}
-  //           onChange={this.handleInputChange}
-  //           />
-  //            </div>
-  
-  //         <div className="input-field">
-  //             <label >Desciprtion</label>
-  //             <input
-  //             ref="body"
-  //             type='text'
-  //             name='des'
-  //             value={des}
-  //             onChange={this.handleInputChange}
-  //           />          
-  //           </div>
 
-  //         <div className="input-field">
-  //             <button onClick={this.createPostRequest} className="btn pink lighten-1 z-depth-0">Create</button>
-  //         </div>
-  //     </form>
-  // </div>
+
+      <div className="container">
+      <form className="white">
+          <h5 className="grey-text text-darken-3">Create Project</h5>
+          <div className="input-field">
+          <label>Title: </label>
+          <input
+            ref="title"
+            type='text'
+            name='title'
+            value={title}
+            onChange={this.handleInputChange}
+            />
+             </div>
+          <div className="input-field">
+              <label >Desciprtion</label>
+              <input
+              ref="body"
+              type='text'
+              name='des'
+              value={des}
+              onChange={this.handleInputChange}
+            />          
+            </div>
+          <div className="input-field">
+              <button onClick={this.createPostRequest} className="btn pink lighten-1 z-depth-0">Create</button>
+          </div>
+      </form>
+  </div>
 
 
     //   <div>

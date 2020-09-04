@@ -1,7 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import Navbar from './Navbar';
-
 const SignedOutLinks =()=>{
 
     return(
@@ -10,7 +9,7 @@ const SignedOutLinks =()=>{
                 <NavLink to='/signedup'>Sign Up</NavLink>
             </li>
             <li>
-                <NavLink to='/signedin'>LogIn</NavLink>
+                <NavLink to='/Login'>LogIn</NavLink>
             </li>
            
         </ul>

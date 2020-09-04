@@ -31,7 +31,7 @@ export default class Project extends React.Component {
     const { match: { params: {id} } } = this.props;
     console.log({id});
 
-    axios.get(`http://localhost:3000/api/v1/projects/${id}`)
+    axios.get(`/api/v1/projects/${id}`)
             .then(data => {
               let res=[]
               console.log(data)
@@ -51,7 +51,7 @@ export default class Project extends React.Component {
     }
     handleDelete = (postId) => {
       console.log(postId)
-      axios.delete(`http://localhost:3000/api/v1/projects/${postId}`).
+      axios.delete(`/api/v1/projects/${postId}`).
         then((response) => {
           alert('Post deleted successfully')
           window.location.href = '/projects';

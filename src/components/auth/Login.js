@@ -75,21 +75,21 @@ handleChange = (e)=>{
 handleSubmit =(e)=> {
     e.preventDefault();
     console.log(this.state)
-    axios.post('http://localhost:3000//users/sign_in',{method: 'post',
-    body: JSON.stringify(this.state),
-    headers: { 
-        'Content-Type': 'application/json' 
+    // axios.post('http://localhost:3000//users/sign_in',{method: 'post',
+    // body: JSON.stringify(this.state),
+    // headers: { 
+    //     'Content-Type': 'application/json' 
 
-    },
-    }).then((response) => {
-        console.log(this.state)
+    // },
+    // }).then((response) => {
+    //     console.log(this.state)
 
-        alert('User Logged In successfully');
-        window.location.href = '/projects';
-        })
-        .catch(data => {
-            debugger
-        })
+    //     alert('User Logged In successfully');
+    //     window.location.href = '/projects';
+    //     })
+    //     .catch(data => {
+    //         debugger
+    //     })
   }
 
 

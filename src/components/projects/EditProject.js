@@ -14,7 +14,7 @@ export default class EditProject extends React.Component {
   componentDidMount() {
     const { match: { params: { id } } } = this.props;
     console.log({id})
-    fetch(`http://localhost:3000/api/v1/projects/${id}`).
+    fetch(`/api/v1/projects/${id}`).
       then((response) => response.json()).
       then((post) => this.setState({ ...post }));
   }
@@ -36,7 +36,7 @@ export default class EditProject extends React.Component {
     const { match: { params: {id} } } = this.props;
     console.log({id})
     console.log(this.state)
-    axios.put(`http://localhost:3000/api/v1/projects/${id}`, {
+    axios.put(`/api/v1/projects/${id}`, {
       method: 'put',
       title: (this.state.title),
       body: (this.state.des),

@@ -6,9 +6,7 @@ import NavbarCss from './NavbarCss.css'
 import ProjectIndex from './ProjectIndex'
 import axios from 'axios'
 import Jumbotron from './Jumbotron'
-import Signup from '../auth/Signup'
-import Login from '../auth/Login'
-import Logout from '../auth/Logout'
+
 
     class Projects extends Component{
         constructor(props){

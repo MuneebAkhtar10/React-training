@@ -4,7 +4,7 @@ import index from './index'
 import {BrowserRouter, Switch,Route} from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
-import SignedIn from './components/auth/Login'
+import Login from './components/auth/Login'
 import SignedUp from './components/auth/Signup'
 import CreateProject from './components/projects/CreateProject'
 import Projects from './components/layout/Projects'
@@ -59,7 +59,7 @@ class App extends Component {
 
             <Route path="/projects/:id/edit" exact component={EditProject}/>
             <Route path="/projects" component={Dashboard}/>
-            <Route path="/Login" component={SignedIn}/>
+            <Route path="/Login" component={Login}/>
             <Route path="/Signup" component={SignedUp}/>
             {/* <Route path="/create" component={CreateProject}/> */}
 
