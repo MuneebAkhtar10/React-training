@@ -1,0 +1,31 @@
+.nav-wrapper{
+
+height:100px;
+background-color: black;
+background-image: linear-gradient(to right,black , #2c3e50);
+
+}
+.right{
+
+    margin-top: 20px;
+}
+.brand-logo{
+
+    margin-top: 20px;
+    margin-left: -160px;;
+
+}
+.button{
+    /* display: grid; */
+
+}
+.table{
+    display: block;
+}
+.home-section {
+
+    background-color: #d74234;
+    height: 300px;
+    padding: 100px 0;
+    color: #fff
+}

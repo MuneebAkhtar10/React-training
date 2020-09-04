@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url(/img/b1.jpg) no-repeat;
+  background-size:100% ;
+  background-position: bottom;
+  background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
+
+  /* background: #734b6d; */
+  min-height: 100%;
+}
+
+html{
+
+  min-height: 100%;
+}
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
