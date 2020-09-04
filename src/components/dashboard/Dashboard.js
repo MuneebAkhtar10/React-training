@@ -97,11 +97,15 @@ export default class Dashboard extends React.Component {
                         </td>
                         <td>{post.body}</td>
                         <td>
-                            <button class="btn-gradient black small"><Link to={`/projects/${post.id}/edit`} >
-                              edit
+                            <button className="btnn2"><Link to={`/project/${post.id}`} >
+                              Show
                             </Link>             
                             </button>
-                            <button onClick={() => this.handleDelete(post.id) } class="btn-gradient red small">
+                            <button ><Link to={`/projects/${post.id}/edit`} >
+                              Edit
+                            </Link>             
+                            </button>
+                            <button onClick={() => this.handleDelete(post.id) } className="btn">
                             Delete
                             </button>
                         </td>

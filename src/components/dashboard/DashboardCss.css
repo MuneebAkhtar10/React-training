@@ -98,4 +98,23 @@ h1{
     margin: 1px 1px;
     cursor: pointer;
   }
-  
+  .btn{
+    background: red;
+    border: 1px transparent white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1px 1px;
+
+    cursor: pointer;
+  }
+  .btnn2{
+text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px transparent white;
+    color: white;
+    background: #006400;
+    /* background-image: linear-gradient(to right(168, 115, 115) , green); */
+
+  }
